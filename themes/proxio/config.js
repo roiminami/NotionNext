@@ -65,8 +65,8 @@ const CONFIG = {
   // 文章区块
   PROXIO_BLOG_ENABLE: true, // 首页博文区块开关
   PROXIO_BLOG_TITLE: '作品',
-  PROXIO_BLOG_COUNT: 4, // 首页博文区块展示前4篇文章
-  PROXIO_BLOG_TEXT_1: '我的最新动态',
+  PROXIO_BLOG_COUNT: 2, // 首页博文区块展示前4篇文章
+  PROXIO_BLOG_TEXT_1: '最新の投稿',
 
   // 区块默认内容显示文章的summary文本，但也支持用自定义图片或logo德国替换掉占位显示内容
   PROXIO_BLOG_PLACEHOLDER_IMG_URL_1: '', // 填写要替换成的图片，支持图床或直接上传到项目中，示例  /images/feature-1.webp
@@ -129,7 +129,7 @@ const CONFIG = {
 
   // 用户测评区块
   PROXIO_TESTIMONIALS_ENABLE: true, 
-  PROXIO_TESTIMONIALS_TITLE: 'ユーザーの声',
+  PROXIO_TESTIMONIALS_TITLE: 'パートナーの声',
   PROXIO_TESTIMONIALS_TEXT_1: '皆さんのフィードバック',
   PROXIO_TESTIMONIALS_TEXT_2:
     '同期・先輩・後輩・他部門・SNSの方々からいただいた応援や感謝の声です。',
