@@ -79,9 +79,9 @@ const LayoutBase = props => {
             <BackToTopButton />
 
             {/* 鼠标阻尼动画 */}
-            {/* <Lenis /> */}
+            <Lenis />
             {/* 鼠标跟随动画 */}
-             {/* <CursorDot /> */}
+             <CursorDot />
             {/* <MadeWithButton/> */}
         </div>
     )
