@@ -141,42 +141,42 @@ const CONFIG = {
     {
       PROXIO_TESTIMONIALS_ITEM_TEXT: 'ネットワーク研修では、私の質問に丁寧に答えてくださりありがとうございました！ おかげで、わからなかったところを克服できました。これからもよろしくお願いします！！',
       PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
-      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '同期',
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '同期A',
       PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2023/4/28 8:38:03',
       PROXIO_TESTIMONIALS_ITEM_URL: '#'
     },
     {
       PROXIO_TESTIMONIALS_ITEM_TEXT: 'お疲れ様です！ グループでは積極的に発言してくれて、話しやすい空気を作ったくれて助かっています。いつもありがとうございます。',
       PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
-      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '同期',
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '同期B',
       PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2023/5/12 20:54:49',
       PROXIO_TESTIMONIALS_ITEM_URL: '#'
     },
     {
       PROXIO_TESTIMONIALS_ITEM_TEXT: '今月のメンターメンティー面談も積極的に話してくれてうれしかったです、ありがとうございました！',
       PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
-      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '先輩',
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '先輩A',
       PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2023/12/12 12:03:30',
       PROXIO_TESTIMONIALS_ITEM_URL: '#'
     },
     {
       PROXIO_TESTIMONIALS_ITEM_TEXT: 'SAP試験のアドバイスありがとうございます。勉強頑張ります。',
       PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
-      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '後輩',
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '後輩A',
       PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2025/3/28 17:41:01',
       PROXIO_TESTIMONIALS_ITEM_URL: '#'
     },
     {
       PROXIO_TESTIMONIALS_ITEM_TEXT: '先ほどはお会いした際に快く対応してくださりありがとうございました！また先日チャットでのご質問対応もとっても嬉しかったです♪今後ともよろしくお願いします。',
       PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
-      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '後輩',
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '後輩B',
       PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2024/6/11 12:40:03',
       PROXIO_TESTIMONIALS_ITEM_URL: '#'
     },
     {
-      PROXIO_TESTIMONIALS_ITEM_TEXT: 'お礼が遅くなってしまいました。JCN案件にていろんな場面でご協力いただきありがとうございました。Analytics Engine検証のときも大変助かりました。またご一緒お仕事できる日を楽しみにしています。',
+      PROXIO_TESTIMONIALS_ITEM_TEXT: 'お礼が遅くなってしまいました。XX案件にていろんな場面でご協力いただきありがとうございました。XX検証のときも大変助かりました。またご一緒お仕事できる日を楽しみにしています。',
       PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
-      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '他部門',
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '他部門A',
       PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2025/3/21 11:04:08',
       PROXIO_TESTIMONIALS_ITEM_URL: '#'
     },
