@@ -110,6 +110,11 @@ const LayoutIndex = props => {
             {/* 生涯 */}
             {siteConfig('PROXIO_CAREER_ENABLE', true, CONFIG) && <Career />}
             
+            {/* 评价展示 */}
+            {siteConfig('PROXIO_TESTIMONIALS_ENABLE', true, CONFIG) && (
+                <Testimonials />
+            )}
+            
             {/* 博文列表 */}
             {siteConfig('PROXIO_BLOG_ENABLE', true, CONFIG) && (
                 <>
@@ -124,10 +129,7 @@ const LayoutIndex = props => {
                 </>
             )}
     
-            {/* 评价展示 */}
-            {siteConfig('PROXIO_TESTIMONIALS_ENABLE', true, CONFIG) && (
-                <Testimonials />
-            )}
+
 
             {/* 公告 */}
             {siteConfig('PROXIO_ANNOUNCEMENT_ENABLE', true, CONFIG) && (
@@ -149,7 +151,7 @@ const LayoutIndex = props => {
             {/* 行动呼吁 */}
             {siteConfig('PROXIO_CTA_ENABLE', true, CONFIG) && <CTA />}
 
-            {siteConfig('PROXIO_WELCOME_COVER_ENABLE', false, CONFIG) && <LoadingCover />}
+            {siteConfig('PROXIO_WELCOME_COVER_ENABLE', true, CONFIG) && <LoadingCover />}
         </>
     )
 }
