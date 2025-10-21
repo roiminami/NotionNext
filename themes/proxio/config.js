@@ -36,8 +36,8 @@ const CONFIG = {
   PROXIO_ABOUT_VAL_2: '10件+',
   PROXIO_ABOUT_KEY_3: '取得資格数',
   PROXIO_ABOUT_VAL_3: '32+',
-  PROXIO_ABOUT_KEY_4: '累計学習時間',
-  PROXIO_ABOUT_VAL_4: '3,200h+',
+  PROXIO_ABOUT_KEY_4: '資格の累計学習時間',
+  PROXIO_ABOUT_VAL_4: '3,400h+',
   
   PROXIO_ABOUT_BUTTON_URL: '/about',
   PROXIO_ABOUT_BUTTON_TEXT: 'もっと詳しく',
