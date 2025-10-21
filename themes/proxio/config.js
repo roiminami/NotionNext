@@ -6,14 +6,14 @@ const CONFIG = {
   PROXIO_WELCOME_TEXT: 'みなみの風物詩へようこそ、クリックして入場', // 欢迎文字，留空则不启用
 
   // 英雄区块导航
-  PROXIO_HERO_ENABLE: false, // 开启英雄区
-  PROXIO_HERO_TITLE_1: '开源且免费的基于 Notion 笔记的网站构建工具', // 英雄区文字
-  PROXIO_HERO_TITLE_2: '通过笔记无感知地建站、成倍放大您的价值', // 英雄区文字
+  PROXIO_HERO_ENABLE: true, // 开启英雄区
+  PROXIO_HERO_TITLE_1: '一人会社を目指す、みなみの風物詩', // 英雄区文字
+  PROXIO_HERO_TITLE_2: '夢への挑戦を記録し、学びを共有する私の冒険', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
-  PROXIO_HERO_BUTTON_1_TEXT: '开始体验', // 英雄区按钮
+  PROXIO_HERO_BUTTON_1_TEXT: '', // 英雄区按钮
   PROXIO_HERO_BUTTON_1_URL:
     'https://docs.tangly1024.com/article/vercel-deploy-notion-next', // 英雄区按钮
-  PROXIO_HERO_BUTTON_2_TEXT: '在Github上关注', // 英雄区按钮
+  PROXIO_HERO_BUTTON_2_TEXT: '', // 英雄区按钮
   PROXIO_HERO_BUTTON_2_URL: 'https://github.com/tangly1024/NotionNext', // 英雄区按钮
   PROXIO_HERO_BUTTON_2_ICON: '/images/starter/github-mark.svg', // 英雄区按钮2的图标，不需要则留空
 
@@ -237,34 +237,12 @@ const CONFIG = {
       name: '友情链接',
       menus: [
         {
-          title: 'Tangly的学习笔记',
-          href: 'https://blog.tangly1024.com'
+          title: 'はくさんのブログ',
+          href: 'https://www.minami.ac.cn'
         },
         {
-          title: 'NotionNext',
-          href: 'https://www.tangly1024.com'
-        }
-      ]
-    },
-    {
-      name: '开发者',
-      menus: [
-        { title: 'Github', href: 'https://github.com/tangly1024/NotionNext' },
-        {
-          title: '开发帮助',
-          href: 'https://docs.tangly1024.com/article/how-to-develop-with-notion-next'
-        },
-        {
-          title: '功能反馈',
-          href: 'https://github.com/tangly1024/NotionNext/issues/new/choose'
-        },
-        {
-          title: '技术讨论',
-          href: 'https://github.com/tangly1024/NotionNext/discussions'
-        },
-        {
-          title: '关于作者',
-          href: 'https://blog.tangly1024.com/about'
+          title: '宅建士ポータル',
+          href: 'https://www.minami.ac.cn/takken'
         }
       ]
     }
@@ -282,22 +260,22 @@ const CONFIG = {
   PROXIO_FOOTER_PRIVACY_TERMS_OF_SERVICE_URL: '/terms-of-use',
 
   // 404页面的提示语
-  PROXIO_404_TITLE: '我们似乎找不到您要找的页面。',
-  PROXIO_404_TEXT: '抱歉！您要查找的页面不存在。可能已经移动或删除。',
-  PROXIO_404_BACK: '回到主页',
+  PROXIO_404_TITLE: 'お探しのページが見つかりませんでした。',
+  PROXIO_404_TEXT: '申し訳ありません。ページが存在しないか、移動または削除された可能性があります。',
+  PROXIO_404_BACK: 'ホームに戻る',
 
   // 页面底部的行动呼吁模块
   PROXIO_CTA_ENABLE: true,
-  PROXIO_CTA_TITLE: '与我建立联系',
-  PROXIO_CTA_TITLE_2: '让我们立刻启动您的项目',
+  PROXIO_CTA_TITLE: '学びを共有し、つながる場所へ',
+  PROXIO_CTA_TITLE_2: '日々の気づきや挑戦をSNSでも発信しています',
   PROXIO_CTA_DESCRIPTION:
-    '访问NotionNext的操作文档，我们提供了详细的教程，帮助你即刻搭建站点',
+    '資格学習や一人会社の準備、独学の記録を通して、自分らしい生き方を探しています。共感してくださった方は、ぜひSNSでもつながりましょう。',
   PROXIO_CTA_BUTTON: true, // 是否显示按钮
-  PROXIO_CTA_BUTTON_URL: '/about',
-  PROXIO_CTA_BUTTON_TEXT: '联系我',
+  PROXIO_CTA_BUTTON_URL: '/sns',
+  PROXIO_CTA_BUTTON_TEXT: 'SNSでつながる',
 
   PROXIO_POST_REDIRECT_ENABLE: true, // 默認開啟重定向
-  PROXIO_POST_REDIRECT_URL: 'https://blog.tangly1024.com', // 重定向域名
+  PROXIO_POST_REDIRECT_URL: 'https://www.minami.ac.cn', // 重定向域名
   PROXIO_NEWSLETTER: process.env.NEXT_PUBLIC_THEME_PROXIO_NEWSLETTER || false // 是否开启邮件订阅 请先配置mailchimp功能 https://docs.tangly1024.com/article/notion-next-mailchimp
 }
 export default CONFIG
