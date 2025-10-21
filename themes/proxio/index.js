@@ -104,6 +104,9 @@ const LayoutIndex = props => {
             {/* 团队介绍 */}
             {siteConfig('PROXIO_ABOUT_ENABLE', true, CONFIG) && <Team />}
 
+            {/* 合作伙伴 */}
+            {siteConfig('PROXIO_BRANDS_ENABLE', true, CONFIG) && <Brand />}
+
             {/* 生涯 */}
             {siteConfig('PROXIO_CAREER_ENABLE', true, CONFIG) && <Career />}
             
@@ -127,16 +130,13 @@ const LayoutIndex = props => {
             )}
 
             {/* 公告 */}
-            {siteConfig('PROXIO_ANNOUNCEMENT_ENABLE', true, CONFIG) && <Announcement
+            {siteConfig('PROXIO_ANNOUNCEMENT_ENABLE', true, CONFIG) && (
+              <Announcement
                 post={props?.notice}
-                className={
-                    'announncement text-center py-16'
-                } />
-                }
+                className="announcement text-center py-16"
+              />
+            )}
 
-
-            {/* 合作伙伴 */}
-            {siteConfig('PROXIO_BRANDS_ENABLE', true, CONFIG) && <Brand />}
 
             {/* 产品特性 */}
             {siteConfig('PROXIO_FEATURE_ENABLE', false, CONFIG) && <Features />}
