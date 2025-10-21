@@ -130,6 +130,8 @@ const LayoutIndex = props => {
             )}
     
 
+            {/* 行动呼吁 */}
+            {siteConfig('PROXIO_CTA_ENABLE', true, CONFIG) && <CTA />}
 
             {/* 公告 */}
             {siteConfig('PROXIO_ANNOUNCEMENT_ENABLE', true, CONFIG) && (
@@ -139,7 +141,6 @@ const LayoutIndex = props => {
               />
             )}
 
-
             {/* 产品特性 */}
             {siteConfig('PROXIO_FEATURE_ENABLE', false, CONFIG) && <Features />}
 
@@ -147,9 +148,6 @@ const LayoutIndex = props => {
             {/* 常见问题 */}
             {siteConfig('PROXIO_FAQ_ENABLE', false, CONFIG) && <FAQ />}
 
-
-            {/* 行动呼吁 */}
-            {siteConfig('PROXIO_CTA_ENABLE', true, CONFIG) && <CTA />}
 
             {siteConfig('PROXIO_WELCOME_COVER_ENABLE', true, CONFIG) && <LoadingCover />}
         </>
