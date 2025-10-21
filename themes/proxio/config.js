@@ -3,10 +3,10 @@
  */
 const CONFIG = {
   PROXIO_WELCOME_COVER_ENABLE: true, //是否显示页面进入的欢迎文字
-  PROXIO_WELCOME_TEXT: '欢迎来到此网站，点击任意位置进入', // 欢迎文字，留空则不启用
+  PROXIO_WELCOME_TEXT: 'みなみの風物詩へようこそ、クリックして入場', // 欢迎文字，留空则不启用
 
   // 英雄区块导航
-  PROXIO_HERO_ENABLE: true, // 开启英雄区
+  PROXIO_HERO_ENABLE: false, // 开启英雄区
   PROXIO_HERO_TITLE_1: '开源且免费的基于 Notion 笔记的网站构建工具', // 英雄区文字
   PROXIO_HERO_TITLE_2: '通过笔记无感知地建站、成倍放大您的价值', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
@@ -21,6 +21,47 @@ const CONFIG = {
   PROXIO_HERO_BANNER_IMAGE: '', // hero区背景，默认是获取Notion背景，如需另外配置图片可以填写在这里
   PROXIO_HERO_BANNER_IFRAME_URL: '', // hero背景区内嵌背景网页 ，可以配置一个网页地址，例如动画网页https://my.spline.design/untitled-b0c6e886227646c34afc82cdc6de4ca2/
 
+  // 作者についての区块
+  PROXIO_ABOUT_ENABLE: true, // 作者区块を表示するか
+  PROXIO_ABOUT_TITLE: 'ブログ主について',
+  PROXIO_ABOUT_TEXT_1: 'クラウドネイティブ環境やAWS・IBMを中心に業務を行う技術者です',
+  PROXIO_ABOUT_TEXT_2:
+    'IT会社で技術担当として勤務する傍ら、完全独学で32資格を取得し、ブログ執筆や学習支援にも取り組んでいます。独学で合格できる勉強法や試験対策、実務経験を活かしたIT知識を発信しています。',
+  PROXIO_ABOUT_PHOTO_URL: '/avatar.png',
+
+  // 数字で見るプロフィール（順番：社会人経験 → 実務プロジェクト数 → 取得資格数 → 累計学習時間）
+  PROXIO_ABOUT_KEY_1: '社会人経験',
+  PROXIO_ABOUT_VAL_1: '2年目+',
+  PROXIO_ABOUT_KEY_2: '実務プロジェクト数',
+  PROXIO_ABOUT_VAL_2: '10件+',
+  PROXIO_ABOUT_KEY_3: '取得資格数',
+  PROXIO_ABOUT_VAL_3: '32+',
+  PROXIO_ABOUT_KEY_4: '累計学習時間',
+  PROXIO_ABOUT_VAL_4: '3,200h+',
+  
+  PROXIO_ABOUT_BUTTON_URL: '/about',
+  PROXIO_ABOUT_BUTTON_TEXT: 'もっと詳しく',
+  
+  // 横向滚动文字（スキル・業務内容）
+  PROXIO_BRANDS_ENABLE: true,
+  PROXIO_BRANDS: [
+    'クラウドネイティブ',
+    'AWS/IBMクラウド',
+    'Kubernetes',
+    'OpenShift',
+    'インフラ設計',
+    '運用自動化',
+    'セキュリティ',
+    'システム移行',
+    'アップデート',
+    'バージョンアップ'
+  ],
+  
+  // フッター文
+  PROXIO_FOOTER_SLOGAN: '独学と実務を通して、IT知識と学びを発信しています。',
+
+
+  
   // 文章区块
   PROXIO_BLOG_ENABLE: true, // 首页博文区块开关
   PROXIO_BLOG_TITLE: '作品',
@@ -36,7 +77,7 @@ const CONFIG = {
   PROXIO_ANNOUNCEMENT_ENABLE: true, //公告文字区块
 
   // 特性区块
-  PROXIO_FEATURE_ENABLE: true, // 特性区块开关
+  PROXIO_FEATURE_ENABLE: false, // 特性区块开关
   PROXIO_FEATURE_TITLE: '为什么选我',
   PROXIO_FEATURE_TEXT_1: '我能让您的项目焕发光彩',
   PROXIO_FEATURE_TEXT_2: '丰富的案例经验，专业的技术服务，优质的沟通效率',
@@ -65,94 +106,106 @@ const CONFIG = {
   // 首页生涯区块
   PROXIO_CAREER_ENABLE: true, // 区块开关
   PROXIO_CAREER_TITLE: '生涯',
-  PROXIO_CAREER_TEXT: '以下是我的职业生涯',
-
-  // 生涯内容卡牌 ，title是标题 ，bio是备注，text是详情
+  PROXIO_CAREER_TEXT: '以下は私の学歴・職歴です',
+  
+  // 生涯内容卡牌
   PROXIO_CAREERS: [
     {
-      title: 'Freelance Architect',
-      bio: '2016-2020',
-      text: 'As a freelance architect, I worked on a range of residential and commercial projects, balancing form and function. I collaborated with clients and contractors to transform concepts into reality, ensuring each design was both aesthetically pleasing and structurally sound.'
+      title: '日本某文系公立大学',
+      bio: '2019-2023',
+      text: '学士課程で文系の専門知識と基礎力を身につけました。学業と並行してプログラミングやIT技術を独学し、PHPやITパスポートなど資格取得にも挑戦しました。'
     },
     {
-      title: 'Product Designer at Spotify',
-      bio: '2020-2022',
-      text: 'At Spotify, I helped shape innovative features for millions of users globally. My focus was on creating seamless music discovery experiences, enhancing user interfaces, and optimizing cross-platform navigation, which led to an improved product flow and increased user satisfaction.'
+      title: '大手企業による合資会社勤務',
+      bio: '2023-現在',
+      text: 'IT企業で技術担当として勤務し、クラウドネイティブ環境やAWS・IBMクラウドを中心に、インフラ設計・運用・自動化・セキュリティ業務に従事しています。また、主体的にブログ執筆や学習支援も行っています。'
     },
     {
-      title: 'Freelance Product Designer',
-      bio: '2022-Now',
-      text: 'Now I design user-centric products that align with client visions. As a freelance product designer, I collaborate with startups and established companies, crafting solutions that elevate user experiences and increase engagement across both digital and physical interfaces.'
+      title: 'MARCH系大学院',
+      bio: '2024-現在',
+      text: '大学院ではビジネス分野を学びつつ、実務やブログ発信に活かせる知識を深めています。'
     }
   ],
 
-  // 首页用户测评区块
-  PROXIO_TESTIMONIALS_ENABLE: true, // 测评区块开关
-  PROXIO_TESTIMONIALS_TITLE: '用户反馈',
-  PROXIO_TESTIMONIALS_TEXT_1: '我们的用户怎么说',
+  // 用户测评区块
+  PROXIO_TESTIMONIALS_ENABLE: true, 
+  PROXIO_TESTIMONIALS_TITLE: 'ユーザーの声',
+  PROXIO_TESTIMONIALS_TEXT_1: '皆さんのフィードバック',
   PROXIO_TESTIMONIALS_TEXT_2:
-    '数千位站长选择用NotionNext搭建他们的网站,通过帮助手册、交流社群以及技术咨询，大家成功上线了自己的网站',
-
-  // 用户测评处的跳转按钮
+    '同期・先輩・後輩・他部門・SNSの方々からいただいた応援や感謝の声です。',
+  
   PROXIO_TESTIMONIALS_BUTTON_URL: '/about',
-  PROXIO_TESTIMONIALS_BUTTON_TEXT: '联系我',
-
-  // 这里不支持CONFIG和环境变量，需要一一修改此处代码。
+  PROXIO_TESTIMONIALS_BUTTON_TEXT: 'もっと見る',
+  
   PROXIO_TESTIMONIALS_ITEMS: [
     {
-      PROXIO_TESTIMONIALS_ITEM_TEXT:
-        '感谢大佬的方法。之前尝试过Super、Potion等国外的第三方平台，实现效果一般，个性化程度远不如这个方法，已经用起来了！ ',
-      PROXIO_TESTIMONIALS_ITEM_AVATAR:
-        'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F22de3fcb-d90d-4271-bc01-f815f476122b%2F4FE0A0C0-E487-4C74-BF8E-6F01A27461B8-14186-000008094BC289A6.jpg?table=collection&id=a320a2cc-6ebe-4a8d-95cc-ea94e63bced9&width=200',
-      PROXIO_TESTIMONIALS_ITEM_NICKNAME: 'Ryan_G',
-      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: 'Ryan`Log 站长',
-      PROXIO_TESTIMONIALS_ITEM_URL: 'https://blog.gaoran.xyz/'
-    },
-    {
-      PROXIO_TESTIMONIALS_ITEM_TEXT:
-        '很喜欢这个主题，本代码小白用三天台风假期搭建出来了，还根据大佬的教程弄了自定义域名，十分感谢，已请喝咖啡~',
-      PROXIO_TESTIMONIALS_ITEM_AVATAR:
-        'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F0d33d169-f932-41ff-ac6b-88a923c08e02%2F%25E5%25A4%25B4%25E5%2583%258F.jfif?table=collection&id=7787658d-d5c0-4f34-8e32-60c523dfaba3&width=400',
-      PROXIO_TESTIMONIALS_ITEM_NICKNAME: 'Asenkits',
-      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '阿森的百宝袋 站长',
-      PROXIO_TESTIMONIALS_ITEM_URL: 'https://asenkits.top/'
-    },
-    {
-      PROXIO_TESTIMONIALS_ITEM_TEXT:
-        '呜呜呜，经过一个下午的努力，终于把博客部署好啦，非常感谢Tangly1024大佬的框架和教程，这是我有生之年用过的最好用的博客框架┭┮﹏┭┮。从今之后，我就可以在自己的博客里bb啦，( •̀ ω •́ )y ',
+      PROXIO_TESTIMONIALS_ITEM_TEXT: 'ネットワーク研修では、私の質問に丁寧に答えてくださりありがとうございました！ おかげで、わからなかったところを克服できました。これからもよろしくお願いします！！',
       PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
-      PROXIO_TESTIMONIALS_ITEM_NICKNAME: 'DWIND',
-      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '且听风吟 站长',
-      PROXIO_TESTIMONIALS_ITEM_URL: 'https://www.dwind.top/'
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '同期',
+      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2023/4/28 8:38:03',
+      PROXIO_TESTIMONIALS_ITEM_URL: '#'
     },
     {
-      PROXIO_TESTIMONIALS_ITEM_TEXT:
-        '感谢提供这么好的项目哈哈 之前一直不知道怎么部署(别的项目好难好复杂)这个相对非常简单 新手非常友好哦',
-      PROXIO_TESTIMONIALS_ITEM_AVATAR:
-        'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd52f6766-3e32-4c3d-8529-46e1f214360f%2Ffavicon.svg?table=collection&id=7d76aad5-a2c4-4d9a-887c-c7913fae4eed&width=400',
-      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '迪升disheng ',
-      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: 'AI资源分享 Blog',
-      PROXIO_TESTIMONIALS_ITEM_URL: 'https://blog.disheng.org/'
-    },
-    {
-      PROXIO_TESTIMONIALS_ITEM_TEXT:
-        '灰常感谢大佬的博客项目，能将博客和notion结合起来，这一直是我挺期待的博客模式。',
+      PROXIO_TESTIMONIALS_ITEM_TEXT: 'お疲れ様です！ グループでは積極的に発言してくれて、話しやすい空気を作ったくれて助かっています。いつもありがとうございます。',
       PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
-      PROXIO_TESTIMONIALS_ITEM_NICKNAME: 'AnJhon',
-      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: 'Anjhon`s Blog 站长',
-      PROXIO_TESTIMONIALS_ITEM_URL: 'https://www.anjhon.top'
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '同期',
+      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2023/5/12 20:54:49',
+      PROXIO_TESTIMONIALS_ITEM_URL: '#'
     },
     {
-      PROXIO_TESTIMONIALS_ITEM_TEXT: '用好久了，太感谢了',
+      PROXIO_TESTIMONIALS_ITEM_TEXT: '今月のメンターメンティー面談も積極的に話してくれてうれしかったです、ありがとうございました！',
       PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
-      PROXIO_TESTIMONIALS_ITEM_NICKNAME: 'LUCEN',
-      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: 'LUCEN考验辅导 站长',
-      PROXIO_TESTIMONIALS_ITEM_URL: 'https://www.lucenczz.top/'
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '先輩',
+      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2023/12/12 12:03:30',
+      PROXIO_TESTIMONIALS_ITEM_URL: '#'
+    },
+    {
+      PROXIO_TESTIMONIALS_ITEM_TEXT: 'SAP試験のアドバイスありがとうございます。勉強頑張ります。',
+      PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '後輩',
+      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2025/3/28 17:41:01',
+      PROXIO_TESTIMONIALS_ITEM_URL: '#'
+    },
+    {
+      PROXIO_TESTIMONIALS_ITEM_TEXT: '先ほどはお会いした際に快く対応してくださりありがとうございました！また先日チャットでのご質問対応もとっても嬉しかったです♪今後ともよろしくお願いします。',
+      PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '後輩',
+      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2024/6/11 12:40:03',
+      PROXIO_TESTIMONIALS_ITEM_URL: '#'
+    },
+    {
+      PROXIO_TESTIMONIALS_ITEM_TEXT: 'お礼が遅くなってしまいました。JCN案件にていろんな場面でご協力いただきありがとうございました。Analytics Engine検証のときも大変助かりました。またご一緒お仕事できる日を楽しみにしています。',
+      PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '他部門',
+      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2025/3/21 11:04:08',
+      PROXIO_TESTIMONIALS_ITEM_URL: '#'
+    },
+    {
+      PROXIO_TESTIMONIALS_ITEM_TEXT: '刷到您的基本情报笔记分享实在写的太有用了！我是24卒就职文转码的 这对我来说真的很有帮助，谢谢您的分享！',
+      PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '小红书 A momo',
+      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2023/09/25',
+      PROXIO_TESTIMONIALS_ITEM_URL: '#'
+    },
+    {
+      PROXIO_TESTIMONIALS_ITEM_TEXT: '自学几个月还是啥也看不懂，我就是需要这样的傻瓜教学啊。',
+      PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '小红书 B momo',
+      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2024/03/15',
+      PROXIO_TESTIMONIALS_ITEM_URL: '#'
+    },
+    {
+      PROXIO_TESTIMONIALS_ITEM_TEXT: '说得好直白…讲人话、适合我这种完全小白…',
+      PROXIO_TESTIMONIALS_ITEM_AVATAR: '/avatar.png',
+      PROXIO_TESTIMONIALS_ITEM_NICKNAME: '小红书 C momo',
+      PROXIO_TESTIMONIALS_ITEM_DESCRIPTION: '2024/09/19',
+      PROXIO_TESTIMONIALS_ITEM_URL: '#'
     }
   ],
 
+
   //   FAQ 常见问题模块
-  PROXIO_FAQ_ENABLE: true, // 常见问题模块开关
+  PROXIO_FAQ_ENABLE: false, // 常见问题模块开关
   PROXIO_FAQ_TITLE: '常见问题解答',
   PROXIO_FAQ_TEXT_1: '有任何问题吗？请看这里',
   PROXIO_FAQ_TEXT_2: '我们收集了常见的用户疑问',
@@ -175,35 +228,7 @@ const CONFIG = {
     }
   ],
 
-  // 关于作者区块
-  PROXIO_ABOUT_ENABLE: true, // 关于作者区块区块开关
-  PROXIO_ABOUT_TITLE: '关于作者',
-  PROXIO_ABOUT_TEXT_1: 'I am an Architect Turned Into a Product Designer',
-  PROXIO_ABOUT_TEXT_2:
-    'With a background in architecture, I now apply my expertise to product design, blending aesthetics, functionality, and innovation. My goal is to create modern, user-focused designs that bring your vision to life.',
-  PROXIO_ABOUT_PHOTO_URL: '/avatar.png',
-  PROXIO_ABOUT_KEY_1: '经验年限',
-  PROXIO_ABOUT_VAL_1: '10年+',
-  PROXIO_ABOUT_KEY_2: '客户',
-  PROXIO_ABOUT_VAL_2: '1000+',
-  PROXIO_ABOUT_KEY_3: '交付项目',
-  PROXIO_ABOUT_VAL_3: '5000+',
-  PROXIO_ABOUT_KEY_4: '累积创作时长（小时）',
-  PROXIO_ABOUT_VAL_4: '10000+',
 
-  PROXIO_ABOUT_BUTTON_URL: '/about',
-  PROXIO_ABOUT_BUTTON_TEXT: '关于我',
-
-  // 横向滚动文字
-  PROXIO_BRANDS_ENABLE: true, // 滚动文字
-  PROXIO_BRANDS: [
-    'Web Design',
-    'Logo Design',
-    'Mobile App Design',
-    'Product Design'
-  ],
-
-  PROXIO_FOOTER_SLOGAN: '我们通过技术为品牌和公司创造数字体验。',
 
   // 页脚三列菜单组
   // 页脚菜单
