@@ -35,7 +35,7 @@ const CONFIG = {
   PROXIO_ABOUT_KEY_2: '実務プロジェクト数',
   PROXIO_ABOUT_VAL_2: '10件+',
   PROXIO_ABOUT_KEY_3: '取得資格数',
-  PROXIO_ABOUT_VAL_3: '32+',
+  PROXIO_ABOUT_VAL_3: '35+',
   PROXIO_ABOUT_KEY_4: '資格の累計学習時間',
   PROXIO_ABOUT_VAL_4: '3,500h+',
   
@@ -105,8 +105,8 @@ const CONFIG = {
 
   // 首页生涯区块
   PROXIO_CAREER_ENABLE: true, // 区块开关
-  PROXIO_CAREER_TITLE: '生涯',
-  PROXIO_CAREER_TEXT: '以下は私の学歴・職歴です',
+  PROXIO_CAREER_TITLE: 'キャリア',
+  PROXIO_CAREER_TEXT: '学歴・職歴',
   
   // 生涯内容卡牌
   PROXIO_CAREERS: [
@@ -116,14 +116,14 @@ const CONFIG = {
       text: '学士課程で文系の専門知識と基礎力を身につけました。学業と並行してプログラミングやIT技術を独学し、PHPやITパスポートなど資格取得にも挑戦しました。'
     },
     {
-      title: '大手企業による合資会社勤務',
+      title: '大手企業による合弁会社勤務',
       bio: '2023-現在',
-      text: 'IT企業で技術担当として勤務し、クラウドネイティブ環境やAWS・IBMクラウドを中心に、インフラ設計・運用・自動化・セキュリティ業務に従事しています。また、主体的にブログ執筆や学習支援も行っています。'
+      text: 'IT企業で技術担当として勤務し、クラウドネイティブ環境やAWS・IBMクラウドを中心に、インフラ設計・運用・自動化・セキュリティ業務に従事しています。'
     },
     {
       title: 'MARCH系大学院',
       bio: '2024-現在',
-      text: '大学院ではビジネス分野を学びつつ、実務やブログ発信に活かせる知識を深めています。'
+      text: '社会人として働きながら大学院でビジネスを学び、柔軟な発想力と広い視野を培っています。'
     }
   ],
 
@@ -239,10 +239,6 @@ const CONFIG = {
         {
           title: 'ハクのクラウド学習',
           href: 'https://notion-bapey.vercel.app'
-        },
-        {
-          title: 'みなみの宅建士',
-          href: 'https://www.minami.ac.cn/takken'
         }
       ]
     }
