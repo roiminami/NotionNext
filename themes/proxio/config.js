@@ -3,7 +3,7 @@
  */
 const CONFIG = {
   PROXIO_WELCOME_COVER_ENABLE: true, //是否显示页面进入的欢迎文字
-  PROXIO_WELCOME_TEXT: 'みなみの風物詩へようこそ、クリックして入場', // 欢迎文字，留空则不启用
+  PROXIO_WELCOME_TEXT: 'みなみの風物詩へ、クリックで入場', // 欢迎文字，留空则不启用
 
   // 英雄区块导航
   PROXIO_HERO_ENABLE: true, // 开启英雄区
@@ -37,7 +37,7 @@ const CONFIG = {
   PROXIO_ABOUT_KEY_3: '取得資格数',
   PROXIO_ABOUT_VAL_3: '32+',
   PROXIO_ABOUT_KEY_4: '資格の累計学習時間',
-  PROXIO_ABOUT_VAL_4: '3,400h+',
+  PROXIO_ABOUT_VAL_4: '3,500h+',
   
   PROXIO_ABOUT_BUTTON_URL: '/about',
   PROXIO_ABOUT_BUTTON_TEXT: 'もっと詳しく',
