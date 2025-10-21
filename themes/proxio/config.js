@@ -234,14 +234,14 @@ const CONFIG = {
   // 页脚菜单
   PROXIO_FOOTER_LINKS: [
     {
-      name: '友情链接',
+      name: '友人帳',
       menus: [
         {
-          title: 'はくさんのブログ',
-          href: 'https://www.minami.ac.cn'
+          title: 'ハクのクラウド学習',
+          href: 'https://notion-bapey.vercel.app'
         },
         {
-          title: '宅建士ポータル',
+          title: 'みなみの宅建士',
           href: 'https://www.minami.ac.cn/takken'
         }
       ]
